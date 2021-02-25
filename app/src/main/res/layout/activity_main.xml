@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/O"
+        android:layout_width="126dp"
+        android:layout_height="61dp"
+        android:rotation="180"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/B00"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                android:background="@drawable/close"
+                 />
+
+            <Button
+                android:id="@+id/B01"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                 />
+
+            <Button
+                android:id="@+id/B02"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                android:background="@drawable/circle_ring"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B10"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                 />
+
+            <Button
+                android:id="@+id/B11"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                android:background="@drawable/close"
+
+                />
+
+            <Button
+                android:id="@+id/B12"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B20"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                 />
+
+            <Button
+                android:id="@+id/B21"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                 />
+
+            <Button
+                android:id="@+id/B22"
+                android:layout_width="@dimen/Button"
+                android:layout_height="@dimen/Button"
+                android:background="@drawable/circle_ring"
+
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="116dp"
+        android:layout_height="56dp"
+        android:rotation="90"
+        android:text="X 0 - 0 O"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageButton
+        android:id="@+id/X"
+        android:layout_width="126dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+    <ImageView
+        android:id="@+id/imageOfX"
+        android:layout_width="86dp"
+        android:layout_height="84dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+    <ImageView
+        android:id="@+id/imageOfO"
+        android:layout_width="86dp"
+        android:layout_height="84dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/O"
+        app:srcCompat="@drawable/close"
+        tools:srcCompat="@drawable/circle_ring" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
