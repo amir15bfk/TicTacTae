@@ -188,7 +188,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        }else if (counter==9) {
+        }
+        else if (counter==9) {
             ImageOfResult = findViewById(R.id.resultisdraw) ;
             ImageOfResult.setVisibility(View.VISIBLE);
             ImageOfResult.setBackgroundResource(R.drawable.draw);
@@ -209,9 +210,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-
-
-        }else {
+        }
+        else {
             if (player==2 ){
                 player=1;
                 X.setVisibility(View.VISIBLE);
