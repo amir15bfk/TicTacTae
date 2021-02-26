@@ -1,0 +1,10 @@
+button functions
+	- y3abz tji X or O (background & array valeus)
+	- test if you wan
+		- affiche big X or O
+		- add point
+		- restart game
+	- give the turn
+		- change player valeu 1 to 2 or 2 to 1
+		- change the visibilety of turn flashs
+test winner function

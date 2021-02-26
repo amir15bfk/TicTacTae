@@ -4,54 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/O"
-        android:layout_width="126dp"
-        android:layout_height="61dp"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="#00FFFFFF"
         android:rotation="180"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:srcCompat="@android:drawable/arrow_up_float" />
+        app:srcCompat="@drawable/flashg" />
+
+    <ImageView
+        android:layout_width="309dp"
+        android:layout_height="309dp"
+        android:background="#00BF1F1F"
+        android:src="@drawable/arena"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/B00"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
+                android:layout_margin="3dp"
                 android:background="@drawable/close"
-                 />
+                android:onClick="ClickB00" />
 
             <Button
                 android:id="@+id/B01"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
-                 />
+                android:layout_margin="3dp"
+                android:background="#00FFFFFF"
+                android:onClick="ClickB01" />
 
             <Button
                 android:id="@+id/B02"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
+                android:layout_margin="3dp"
                 android:background="@drawable/circle_ring"
 
-                />
+                android:onClick="ClickB02" />
         </TableRow>
 
         <TableRow
@@ -62,21 +81,26 @@
                 android:id="@+id/B10"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
-                 />
+                android:layout_margin="3dp"
+                android:background="#00FFFFFF"
+                android:onClick="ClickB10" />
 
             <Button
                 android:id="@+id/B11"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
+                android:layout_margin="3dp"
                 android:background="@drawable/close"
 
-                />
+                android:onClick="ClickB11" />
 
             <Button
                 android:id="@+id/B12"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
-                 />
+                android:layout_margin="3dp"
+                android:background="#00FFFFFF"
+                android:onClick="ClickB12" />
         </TableRow>
 
         <TableRow
@@ -87,47 +111,56 @@
                 android:id="@+id/B20"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
-                 />
+                android:layout_margin="3dp"
+                android:background="#00FFFFFF"
+                android:onClick="ClickB20" />
 
             <Button
                 android:id="@+id/B21"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
-                 />
+                android:layout_margin="3dp"
+                android:background="#00FFFFFF"
+                android:onClick="ClickB21" />
 
             <Button
                 android:id="@+id/B22"
                 android:layout_width="@dimen/Button"
                 android:layout_height="@dimen/Button"
+                android:layout_margin="3dp"
                 android:background="@drawable/circle_ring"
 
-                />
+                android:onClick="ClickB22" />
         </TableRow>
 
     </TableLayout>
 
     <TextView
-        android:id="@+id/player1"
-        android:layout_width="116dp"
-        android:layout_height="56dp"
-        android:rotation="90"
-        android:text="X 0 - 0 O"
+        android:id="@+id/theresult"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:rotation="-90"
+        android:text="O 0 - 0 X"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/X"
-        android:layout_width="126dp"
-        android:layout_height="61dp"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/arrow_up_float" />
+        app:srcCompat="@drawable/flashg" />
 
     <ImageView
         android:id="@+id/imageOfX"
@@ -137,6 +170,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/X"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/close" />
@@ -149,16 +183,67 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/O"
-        app:srcCompat="@drawable/close"
-        tools:srcCompat="@drawable/circle_ring" />
+        app:srcCompat="@drawable/circle_ring" />
+
     <ImageView
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#8DE13A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/resultisdraw"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#E19E3A"
+        android:rotation="-90"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oscore"
+        android:layout_width="115dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:rotation="-90"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageOfO"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/O"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/xscore"
+        android:layout_width="115dp"
+        android:layout_height="85dp"
+        android:rotation="-90"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toTopOf="@+id/X"
+        app:layout_constraintEnd_toStartOf="@+id/imageOfX"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.49" />
 </androidx.constraintlayout.widget.ConstraintLayout>
